@@ -52,12 +52,16 @@ a:hover {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+  body {
+    background: none;
+  }
   .container-fluid {
     margin-top: 50px;
     margin-bottom: 50px;
   }
   
   .panel-primary {
+    border: none;
     border-radius: 0;
     box-shadow: none;
     padding: 20px;
