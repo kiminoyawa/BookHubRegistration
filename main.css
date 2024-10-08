@@ -15,7 +15,9 @@ body {
 }
 
 h2 {
-  font-weight: bold;
+  color: #333333;
+  font-weight: 600;
+  font-size: 1.75rem;
 }
 
 .input-group-text {
