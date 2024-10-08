@@ -14,10 +14,25 @@ body {
   box-shadow: 0 4px 12px rgba(165, 42, 42, 1);
 }
 
-h2 {
-  color: #333333;
+.system-logo {
+  background: #a52a2a;
+  border-radius: 50px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+.system-logo img {
+  width: 30%;
+}
+
+.system-logo p {
+  color: #F5DEB3;
+  font-size: 0.7rem;
+}
+
+.panel-primary h2 {
   font-weight: 600;
-  font-size: 1.75rem;
+  font-size: 1.7rem;
 }
 
 .input-group-text {
