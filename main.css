@@ -76,6 +76,19 @@ a:hover {
   body {
     background: none;
   }
+
+  .system-logo {
+    background: none;
+  }
+
+  .system-logo img {
+    width: 50%;
+  }
+
+  .system-logo p {
+    color: #a52a2a;
+  }
+  
   .container-fluid {
     margin-top: 50px;
     margin-bottom: 50px;
