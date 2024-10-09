@@ -41,10 +41,15 @@ body {
   border: none;
 }
 
+.input-group .form-control {
+  width: 100%; 
+}
+
 .form-control {
   border: 1px solid #ccc;
   padding: 10px;
   border-radius: 5px;
+  box-sizing: border-box;
 }
 
 .btn {
