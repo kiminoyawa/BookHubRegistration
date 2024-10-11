@@ -1,107 +1,136 @@
 /* General Styling */
 body {
-  background: radial-gradient(#a52a2a, #333333);
-  font-family: "Poppins", sans-serif;
-}
-
-.panel-primary {
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 50px;
-  border: 1px solid #a52a2a;
-  border-bottom-right-radius: 0;
-  border-top-left-radius: 0;
-  box-shadow: 0 4px 12px rgba(165, 42, 42, 1);
-}
-
-.system-logo {
-  background: #a52a2a;
-  border-radius: 50px;
-  border-bottom-right-radius: 0px;
-  border-top-left-radius: 0px;
-}
-
-.system-logo img {
-  width: 30%;
-}
-
-.system-logo p {
-  color: #F5DEB3;
-  font-size: 0.7rem;
-}
-
-.panel-primary h2 {
-  font-weight: 600;
-  font-size: 1.7rem;
-}
-
-.input-group-text {
-  background-color: #a52a2a;
-  color: #fff;
-  border: none;
-}
-
-.form-control {
-  border: 1px solid #ccc;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.btn {
-  background-color: #a52a2a;
-  color: #fff;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.btn:hover {
-  background-color: #ccc;
-  color: #a52a2a;
-  transform: translateY(-2px);
-}
-
-a {
-  text-decoration: none;
-  color: #a52a2a;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  body {
-    background: none;
-  }
-
-  .system-logo {
-    background: none;
-  }
-
-  .system-logo img {
-    width: 50%;
-  }
-
-  .system-logo p {
-    color: #a52a2a;
-  }
-  
-  .container-fluid {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    background: radial-gradient(#a52a2a, #333333);
+    font-family: "Poppins", sans-serif;
   }
   
   .panel-primary {
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-    padding: 20px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 50px;
+    border: 1px solid #a52a2a;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    box-shadow: 0 4px 12px rgba(165, 42, 42, 1);
+  }
+  
+  .system {
+    background: #a52a2a;
+    border-radius: 50px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+  
+  .system p {
+    color: #F5DEB3;
+    font-size: 0.8rem;
+  }
+  
+  .panel-primary h2 {
+    font-weight: 600;
+    font-size: 1.7rem;
   }
 
-  .input-group {
-    margin-bottom: 15px;
+  .reg-form {
+    border-top: 1px solid #a52a2a;
   }
-}
+  
+  .input-group-text {
+    background-color: #a52a2a;
+    color: #fff;
+    border: none;
+  }
+  
+  .form-control {
+    border: 1px solid #a52a2a;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .form-check-input {
+    border: 1px solid #a52a2a;
+  }
+  
+  .form-select {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+.form-select {
+    -webkit-appearance: none; /* Removes default dropdown styles */
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #a52a2a;
+  }
+
+  .form-select option:hover,
+  .form-select option:focus {
+    background-color: #a52a2a;
+    color: white;
+  }
+
+  .form-select:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #a52a2a; /* Optional: Set a custom border color */
+  }
+
+  .btn {
+    background-color: #a52a2a;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn.btn-primary:hover  {
+    background-color: #ccc;
+    color: #a52a2a;
+    transform: translateY(-2px);
+    border: 1px solid #a52a2a;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #a52a2a;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  
+  /* Responsive Styles */
+  @media (max-width: 600px) {
+    body {
+      background: none;
+    }
+  
+    .system {
+      background: none;
+    }
+  
+    .system p {
+      color: #a52a2a;
+    }
+    
+    .container-fluid {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    
+    .panel-primary {
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      padding: 20px;
+    }
+  
+    .input-group {
+      margin-bottom: 15px;
+    }
+  }
+  
