@@ -21,39 +21,47 @@
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <div class="container-fluid d-flex justify-content-center align-items-center vh-100 mb-5 mt-5">
+  <div class="container-fluid d-flex justify-content-center align-items-center vh-100" style="margin-top: 150px; margin-bottom: 150px;">
     <div class="col-12 col-md-5">
 
       <div class="panel-primary text-center">
 
-        <div class="system-logo">
-          <img src="bookhub.png" alt="logo" class="img-fluid">
+        <div class="system">
              <p>Book Borrowing System</p>
         </div>
 
+        <div class="system-logo">
+          <img src="bookLogo.png" style="width:130px;height:130px;display: block;margin: 0 auto;border: 0 px solid;border-radius: 100%; object-fit: cover;" class="img-circle img-responsive mb-2 mt-2" alt="systemLogo">
+        </div>
         <h2>Registration</h2>
+        
+        <div class="reg-form"></div>
+
         <form>
-          <div class="row">
-            
+          <div class="row mt-4">
+          
             <div class="col-md-6">
               <div class="input-group mb-3">
                 <span class="input-group-text"><i class='bx bxs-user-circle'></i></span>
-                <input type="text" name="lastName" id="lastName" class="form-control" placeholder="Last Name">
+                <input type="text" name="lastName" id="lastName" class="form-control" placeholder="Last Name" required="required" data-validation-error-msg="Last Name is required" data-validation-error-msg-container="#lastnameerror">
               </div>
+              <div id="lastnameerror"> </div>
             </div>
 
             <div class="col-md-6">
               <div class="input-group mb-3">
                 <span class="input-group-text"><i class='bx bxs-user-circle'></i></span>
-                <input type="text" name="firstName" id="firstName" class="form-control" placeholder="First Name">
+                <input type="text" name="firstName" id="firstName" class="form-control" placeholder="First Name" required="required" data-validation-error-msg="First Name is required" data-validation-error-msg-container="#firstnameerror">
               </div>
+              <div id="firstnameerror"> </div>
             </div>
 
             <div class="col-md-6">
               <div class="input-group mb-3">
                 <span class="input-group-text"><i class='bx bxs-user-circle'></i></span>
-                <input type="text" name="middleName" id="middleName" class="form-control" placeholder="Middle Name">
+                <input type="text" name="middleName" id="middleName" class="form-control" placeholder="Middle Name" required="required" data-validation-error-msg="Middle Name is required" data-validation-error-msg-container="#middlenameerror">
               </div>
+              <div id="middlenameerror"> </div>
             </div>
 
             <div class="col-md-6">
@@ -65,6 +73,7 @@
             
           </div>
 
+          <!-- I plan to connect this part to my db so that the section will automatically change base of the institute the student is under and the year level he/se currently at -->
           <div class="row">
             
             <div class="col-md-12 mb-3">
@@ -73,8 +82,10 @@
               <select class="form-select" aria-label="Default select example">
                 <option selected>INSTITUTE</option>
                 <option value="1">IMACS</option>
-                <option value="2">BSN</option>
-                <option value="3">BSM</option>
+                <option value="2">IOE</option>
+                <option value="3">ION</option>
+                <option value="4">IOM</option>
+                <option value="5">IOLA</option>
               </select>
               </div>
             </div>
@@ -87,7 +98,7 @@
                 <option value="1">1st year</option>
                 <option value="2">2nd year</option>
                 <option value="3">3rd year</option>
-                <option value="3">4th year</option>
+                <option value="4">4th year</option>
               </select>
               </div>
             </div>
@@ -101,48 +112,64 @@
                 <option value="2">102</option>
                 <option value="3">103</option>
               </select>
-              </div>
-              
+              </div> 
+          </div>
+
           </div>
 
           <div class="row">
 
-            <div class="col-md-6">
+             <div class="col-md-6">
               <div class="input-group mb-3">
-                <span class="input-group-text"><i class='bx bxs-user-circle'></i></span>
-                <input type="text" name="lastName" id="lastName" class="form-control" placeholder="Last Name">
+                 <span class="input-group-text"><i class='bx bx-id-card'></i></span>
+                  <input type="text" name="schoolID" id="schoolID" class="form-control" placeholder="School ID" required="required" data-validation-error-msg="School ID is required" data-validation-error-msg-container="#schooliderror">
               </div>
+              <div id="schooliderror"> </div>
             </div>
 
             <div class="col-md-6">
               <div class="input-group mb-3">
-                <span class="input-group-text"><i class='bx bxs-user-circle'></i></span>
-                <input type="text" name="firstName" id="firstName" class="form-control" placeholder="First Name">
+                <span class="input-group-text"><i class='bx bxs-envelope'></i></span>
+                <input type="email" name="schoolEmail" class="form-control" placeholder="School Email" required="required" data-validation-error-msg="Email is required" data-validation-error-msg-container="#schoolemailerror">
               </div>
+              <div id="emailerror"> </div>
             </div>
 
             <div class="col-md-6">
               <div class="input-group mb-3">
-                <span class="input-group-text"><i class='bx bxs-user-circle'></i></span>
-                <input type="text" name="middleName" id="middleName" class="form-control" placeholder="Middle Name">
+                <span class="input-group-text"><i class='bx bx-key'></i></span>
+                <input type="password" name="password" class="form-control" placeholder="Password" required="required" data-validation-error-msg="Atleast 8 characters is required" data-validation-error-msg-container="#passworderror">
               </div>
+              <div id="passworderror"> </div>
             </div>
 
             <div class="col-md-6">
               <div class="input-group mb-3">
-                <span class="input-group-text"><i class='bx bxs-user-circle'></i></span>
-                <input type="text" name="prefix" id="prefix" class="form-control" placeholder="Prefix">
+                <span class="input-group-text"><i class='bx bxs-lock-alt'></i></span>
+                <input type="password" name="confirmPassword" class="form-control" placeholder="Confirm Password" required="required" data-validation-error-msg="The password didn't match" data-validation-error-msg-container="#confirmpassworderror">
               </div>
+              <div id="confirmpassworderror"> </div>
             </div>
             
           </div>
 
-          <div class="d-grid mb-4 mt-4">
+          <div class="row">
+            <div class="row">
+              <div class="col-md-12">
+                  <div class="d-flex justify-content-between align-items-center mb-4">
+                      <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="rememberMe">
+                          <label class="remember small">I accept the terms and condition and I have read the <a href="">privacy policy</a></label>
+              </div>
+          </div>
+          </div>
+
+          <div class="d-grid mb-2 mt-2">
             <button type="submit" class="btn btn-primary w-100">Register</button>
           </div>
 
           <div class="text-center small">
-            Already have an account? <a href="#">Log In</a>
+            Already have an account? <a href="bookHubLogIn.html">Log In</a>
           </div>
         </form>
       </div>
